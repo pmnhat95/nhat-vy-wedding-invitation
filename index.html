@@ -1,17 +1,161 @@
+<div class="wedding-banner">
+    <div class="banner-overlay"></div>
+    <h1 class="animated-title">Wedding Invitation</h1>
+</div>
+
 <div class="wedding-invitation">
-    <h1>Wedding Invitation</h1>
-    <div class="invitation-content">
-        <p>Together with their families</p>
-        <h2>Jane Doe & John Smith</h2>
-        <p>request the pleasure of your company</p>
-        <p>as they join in marriage</p>
-        <div class="details">
-            <p>Saturday, December 31st, 2024</p>
-            <p>at 4 o'clock in the afternoon</p>
-            <p>The Grand Hotel</p>
-            <p>123 Wedding Lane</p>
-            <p>Cityville, State 12345</p>
+    <div class="invitation-content fade-in">
+        <p class="elegant-text">Together with their families</p>
+        
+        <div class="couple-names">
+            <h2 class="animated-text">Minh Nhật</h2>
+            <span class="ampersand">&</span>
+            <h2 class="animated-text">Phương Vy</h2>
         </div>
-        <p class="rsvp">Please RSVP by November 1st, 2024</p>
+
+        <p class="elegant-text">request the pleasure of your company</p>
+        <p class="elegant-text">as they join in marriage</p>
+
+        <div class="photo-gallery">
+            <img src="https://ibb.co/KzVr8M4" alt="Couple Photo 1" class="gallery-img">
+            <img src="couple-2.jpg" alt="Couple Photo 2" class="gallery-img">
+            <img src="couple-3.jpg" alt="Couple Photo 3" class="gallery-img">
+        </div>
+
+        <div class="details animated-box">
+            <p class="date">Saturday, December 31st, 2024</p>
+            <p class="time">at 4 o'clock in the afternoon</p>
+            <div class="venue-details">
+                <p class="venue">The Grand Hotel</p>
+                <p class="address">123 Wedding Lane</p>
+                <p class="location">Cityville, State 12345</p>
+            </div>
+        </div>
+
+        <div class="decorative-border"></div>
+        
+        <p class="rsvp animated-text">Please RSVP by November 1st, 2024</p>
+        
+        <div class="floral-decoration">
+            <div class="flower-left"></div>
+            <div class="flower-right"></div>
+        </div>
     </div>
 </div>
+
+<style>
+    .wedding-banner {
+        position: relative;
+        height: 300px;
+        background-image: url('banner-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.6);
+    }
+
+    .animated-title {
+        position: relative;
+        font-family: 'Playfair Display', serif;
+        color: #333;
+        text-align: center;
+        padding-top: 120px;
+        animation: fadeInDown 1.5s ease-out;
+    }
+
+    .wedding-invitation {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .elegant-text {
+        font-family: 'Cormorant Garamond', serif;
+        color: #555;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .couple-names {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .ampersand {
+        font-size: 2em;
+        color: #d4af37;
+        margin: 0 20px;
+    }
+
+    .photo-gallery {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+    }
+
+    .gallery-img {
+        width: 30%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.05);
+    }
+
+    .animated-box {
+        animation: fadeIn 1s ease-out;
+    }
+
+    .details {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        border: 1px solid #d4af37;
+        border-radius: 5px;
+    }
+
+    .decorative-border {
+        height: 2px;
+        background: linear-gradient(to right, transparent, #d4af37, transparent);
+        margin: 30px 0;
+    }
+
+    .rsvp {
+        font-size: 1.2em;
+        color: #d4af37;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .floral-decoration {
+        position: relative;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
