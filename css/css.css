@@ -407,6 +407,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  width: 100%;
 }
 table {
   caption-side: bottom;
@@ -6424,7 +6425,7 @@ header {
   }
 }
 .gallery-grid a {
-  cursor: url("../images/gall-zoom-in.png"), pointer;
+  cursor: pointer;
 }
 .gallery-grid figure {
   height: 100%;
